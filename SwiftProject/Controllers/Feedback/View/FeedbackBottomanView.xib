@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FeedbackBottomanView" customModule="SwiftProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="148"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shadow_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Fma-95-gSc">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="148"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKf-Tc-8il">
+                    <rect key="frame" x="34" y="20" width="220" height="78"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="78" id="87f-Hi-Tek"/>
+                    </constraints>
+                    <string key="text">如想加入专家陪读的读书会为孩子获得更多
+优质教育资源，请添加我们的发起人进行交流
+微信：mmcan01
+QQ：531639586
+</string>
+                    <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="11"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8i-6W-ku2">
+                    <rect key="frame" x="34" y="98" width="307" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="Q3D-3v-jsZ"/>
+                    </constraints>
+                    <string key="text">提示：由于微信对加人有限制，可能会出现老师收不到好友请求的
+情况</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JKf-Tc-8il" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="0gA-tQ-kjv"/>
+                <constraint firstItem="Z8i-6W-ku2" firstAttribute="leading" secondItem="JKf-Tc-8il" secondAttribute="leading" id="8AA-a4-bxj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Z8i-6W-ku2" secondAttribute="trailing" constant="34" id="VTi-Jp-SIO"/>
+                <constraint firstItem="Fma-95-gSc" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="ZIX-LT-Chf"/>
+                <constraint firstItem="Z8i-6W-ku2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="34" id="c0a-Yu-YNY"/>
+                <constraint firstItem="Z8i-6W-ku2" firstAttribute="top" secondItem="JKf-Tc-8il" secondAttribute="bottom" id="cMf-za-hit"/>
+                <constraint firstItem="Fma-95-gSc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="fkv-Mf-I9m"/>
+                <constraint firstItem="Fma-95-gSc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ltU-UQ-4V0"/>
+                <constraint firstItem="Fma-95-gSc" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="oDx-vg-He2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bottomLable" destination="Z8i-6W-ku2" id="Fp2-Oi-arF"/>
+                <outlet property="infoLabel" destination="JKf-Tc-8il" id="0dh-9f-UYh"/>
+            </connections>
+            <point key="canvasLocation" x="55.200000000000003" y="48.575712143928037"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="shadow_bg" width="260" height="115"/>
+    </resources>
+</document>
